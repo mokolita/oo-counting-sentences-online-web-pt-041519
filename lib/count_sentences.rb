@@ -28,6 +28,6 @@ class String
     if self.end_with?(".") || self.end_with?("?") || self.end_with?("!")
       self.split.count 
     else self.end_with?("..") || self.end_with?("??") || self.end_with?("!!")
-      
+    end 
   end
 end
