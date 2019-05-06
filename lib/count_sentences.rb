@@ -27,7 +27,8 @@ class String
     #binding.pry
     if self.end_with?(".") || self.end_with?("?") || self.end_with?("!")
       self.split.count 
-    else self.end_with?("..") || self.end_with?("??") || self.end_with?("!!")
+    elsif self.end_with?("..") || self.end_with?("??") || self.end_with?("!!")
+    else 
     end 
   end
 end
