@@ -23,12 +23,9 @@ class String
     false 
   end
 
-  def count_sentences
-    #binding.pry
-    if self.end_with?(".") || self.end_with?("?") || self.end_with?("!")
-      self.split.count 
-    elsif self.end_with?("..") || self.end_with?("??") || self.end_with?("!!")
-    else 
-    end 
+ def count_sentences
+    new_array = self.split(/[.?!]/).reject {|string| string.empty?}
+    return new_array.length
   end
+end
 end
